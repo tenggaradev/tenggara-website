@@ -17,7 +17,7 @@ const Header = () => {
           <div onClick={() => setShowNav(!showNav)} className={styles.menu}>
             <AiOutlineMenu />
           </div>
-          <div className={styles.logo}>
+          <div onClick={() => setShowNav(false)} className={styles.logo}>
             <Link href="/">
               <Image
                 src={Logo}
@@ -29,10 +29,10 @@ const Header = () => {
           </div>
           <div className={styles.navbar}>
             <div className={styles.navMenu}>
-              <Link href="/#services">
+              <Link href="/#services" scroll={false}>
                 <p>Services</p>
               </Link>
-              <Link href="/#about">
+              <Link href="/#about" scroll={false}>
                 <p>About</p>
               </Link>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
 
       {/* mobile navigation */}
       {showNav && (
-        <div className={styles.navMobile}>
+        <div onClick={() => setShowNav(false)} className={styles.navMobile}>
           <div className={styles.services}>
             <Link href="/#services">
               <p>Services</p>

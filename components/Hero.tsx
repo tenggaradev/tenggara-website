@@ -27,10 +27,12 @@ const Hero = () => {
           </div>
         </section>
       </main>
+
       {/* stacks */}
       <section className={styles.stacks}>
         <div className={styles.container}>
           {/* <div className={styles.stack}> */}
+          <p>ethereum</p>
           <p>ethereum</p>
           <p>ethereum</p>
 

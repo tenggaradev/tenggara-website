@@ -13,9 +13,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      {/* <Services /> */}
-      {/* <About /> */}
-      {/* <Contact /> */}
+      <Services />
+      <About />
+      <Contact />
     </>
   )
 }

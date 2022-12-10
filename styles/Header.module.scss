@@ -58,7 +58,7 @@
   }
 }
 
-// BREAKPOINTS
+//___ BREAKPOINTS ___
 @include md {
   .header {
     .container {
@@ -101,7 +101,9 @@
       width: 90%;
       border-bottom: 1px solid #ddd;
     }
-    .services:hover {
+    .services:hover,
+    .services:active,
+    .services:focus {
       color: $primary;
     }
     .about {
@@ -111,7 +113,9 @@
       width: 90%;
       border-bottom: 1px solid #ddd;
     }
-    .about:hover {
+    .about:hover,
+    .about:active,
+    .about:focus {
       color: $primary;
     }
   }
