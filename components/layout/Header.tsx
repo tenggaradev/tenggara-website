@@ -29,14 +29,23 @@ const Header = () => {
           </div>
           <div className={styles.navbar}>
             <div className={styles.navMenu}>
-              <Link href="/#services" scroll={false}>
+              <Link
+                className={styles.services}
+                href="/#services"
+                scroll={false}
+              >
                 <p>Services</p>
               </Link>
-              <Link href="/#about" scroll={false}>
+              <Link className={styles.about} href="/#about" scroll={false}>
                 <p>About</p>
               </Link>
             </div>
-            <Link className={styles.contact} href="/#contact">
+            <Link
+              onClick={() => setShowNav(false)}
+              scroll={false}
+              className={styles.contact}
+              href="/#contact"
+            >
               <p>Contact</p>
             </Link>
           </div>

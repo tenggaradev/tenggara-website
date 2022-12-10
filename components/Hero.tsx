@@ -2,6 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 // media
 import HeroImage from "../public/hero-icon.png"
+import Fantom from "../public/fantom-logo.png"
+import Ethereum from "../public/ethereum-logo.png"
+import Avalanche from "../public/avalanche-logo.png"
+import Polygon from "../public/polygon-logo.png"
+import Binance from "../public/bsc-logo.png"
 // style
 import styles from "../styles/Hero.module.scss"
 
@@ -31,12 +36,41 @@ const Hero = () => {
       {/* stacks */}
       <section className={styles.stacks}>
         <div className={styles.container}>
-          {/* <div className={styles.stack}> */}
-          <p>ethereum</p>
-          <p>ethereum</p>
-          <p>ethereum</p>
-
-          {/* </div> */}
+          <div>
+            <Image
+              src={Ethereum}
+              alt="ethereum"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div>
+            <Image
+              src={Fantom}
+              alt="fantom"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div>
+            <Image
+              src={Avalanche}
+              alt="avalanche"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div>
+            <Image
+              src={Polygon}
+              alt="polygon"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div>
+            <Image
+              src={Binance}
+              alt="binance"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
         </div>
       </section>
     </>

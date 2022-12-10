@@ -5,6 +5,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  min-height: 100px;
   background-color: $primary;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1440px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    span {
+      color: #ccc;
+    }
+
+    .term {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+//___ BREAKPOINTS ___
+@include md {
+  .footer {
+    .container {
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
 }

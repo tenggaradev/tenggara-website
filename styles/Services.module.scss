@@ -72,6 +72,18 @@
 }
 
 //___ BREAKPOINTS ___
+@include md {
+  .services {
+    .container {
+      .cards {
+        .card {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
 @include sm {
   .services {
     .container {

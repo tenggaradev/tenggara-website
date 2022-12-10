@@ -6,9 +6,9 @@
   justify-content: center;
   align-items: center;
   min-height: 595px;
-  padding-top: 150px;
+  padding-top: 170px;
   padding-bottom: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   position: relative;
 
   .container {
@@ -46,15 +46,30 @@
       .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
         background-color: $white;
-        gap: 30px;
-        width: 397px;
-        min-height: 243px;
+        width: 330px;
+        min-height: 350px;
         box-shadow: 0 5px 15px 5px rgba($color: #000000, $alpha: 0.03);
         border-radius: 6px;
         padding: 30px;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $accent2;
+          border: 1px solid #cad7dc;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          span {
+            display: flex;
+            margin: auto;
+            color: $primary;
+            font-size: 25px;
+          }
+        }
       }
     }
   }
@@ -62,25 +77,35 @@
 
 .about::before {
   content: "";
-  background: $secondary;
+  background: $accent;
   width: 100%;
-  height: 750px;
+  height: 850px;
   transform: skewY(-3deg);
   position: absolute;
   z-index: -1;
-  top: 20px;
+  top: 50px;
 }
 
 //___ BREAKPOINTS ___
-@include xl {
+@include lg {
   .about::before {
-    height: 900px;
+    height: 1200px;
   }
 }
 
-@include lg {
+@include md {
+  .about {
+    .container {
+      .cards {
+        .card {
+          width: 80%;
+        }
+      }
+    }
+  }
+
   .about::before {
-    height: 1300px;
+    height: 1600px;
   }
 }
 
@@ -91,14 +116,14 @@
         .card {
           height: 100%;
           width: 100%;
-          .content {
-            justify-content: center;
-            align-items: center;
-            h4 {
-              text-align: center;
-              line-height: 0;
-            }
-          }
+          //   .content {
+          //     justify-content: center;
+          //     align-items: center;
+          //     h4 {
+          //       text-align: center;
+          //       line-height: 0;
+          //     }
+          //   }
         }
       }
     }
