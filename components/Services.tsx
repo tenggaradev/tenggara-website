@@ -1,5 +1,8 @@
 // media
 import { SiBlockchaindotcom } from "react-icons/si"
+import { FaFileContract, FaCoins } from "react-icons/fa"
+import { GiCube } from "react-icons/gi"
+import { IoImages } from "react-icons/io5"
 // style
 import styles from "../styles/Services.module.scss"
 
@@ -18,7 +21,7 @@ const Services = () => {
           <div className={styles.card}>
             <div className={styles.icon}>
               <span>
-                <SiBlockchaindotcom />
+                <GiCube />
               </span>
             </div>
             <div className={styles.content}>
@@ -48,7 +51,7 @@ const Services = () => {
           <div className={styles.card}>
             <div className={styles.icon}>
               <span>
-                <SiBlockchaindotcom />
+                <IoImages />
               </span>
             </div>
             <div className={styles.content}>
@@ -63,7 +66,7 @@ const Services = () => {
           <div className={styles.card}>
             <div className={styles.icon}>
               <span>
-                <SiBlockchaindotcom />
+                <FaCoins />
               </span>
             </div>
             <div className={styles.content}>
@@ -78,7 +81,7 @@ const Services = () => {
           <div className={styles.card}>
             <div className={styles.icon}>
               <span>
-                <SiBlockchaindotcom />
+                <FaFileContract />
               </span>
             </div>
             <div className={styles.content}>
