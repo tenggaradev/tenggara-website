@@ -95,6 +95,7 @@
 
 @include md {
   .about {
+    padding-top: 100px;
     .container {
       .cards {
         .card {
@@ -105,7 +106,8 @@
   }
 
   .about::before {
-    height: 1600px;
+    top: 10px;
+    height: 1500px;
   }
 }
 
@@ -116,14 +118,6 @@
         .card {
           height: 100%;
           width: 100%;
-          //   .content {
-          //     justify-content: center;
-          //     align-items: center;
-          //     h4 {
-          //       text-align: center;
-          //       line-height: 0;
-          //     }
-          //   }
         }
       }
     }

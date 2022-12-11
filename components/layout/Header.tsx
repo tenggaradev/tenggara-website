@@ -14,10 +14,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.container}>
-          <div onClick={() => setShowNav(!showNav)} className={styles.menu}>
-            <AiOutlineMenu />
-          </div>
-          <div onClick={() => setShowNav(false)} className={styles.logo}>
+          <div className={styles.logo} onClick={() => setShowNav(false)}>
             <Link href="/">
               <Image
                 src={Logo}
@@ -28,7 +25,7 @@ const Header = () => {
             </Link>
           </div>
           <div className={styles.navbar}>
-            <div className={styles.navMenu}>
+            <div className={styles.navigation}>
               <Link
                 className={styles.services}
                 href="/#services"
@@ -39,22 +36,28 @@ const Header = () => {
               <Link className={styles.about} href="/#about" scroll={false}>
                 <p>About</p>
               </Link>
+              <Link
+                className={styles.contact}
+                onClick={() => setShowNav(false)}
+                scroll={false}
+                href="/#contact"
+              >
+                <p>Contact</p>
+              </Link>
             </div>
-            <Link
-              onClick={() => setShowNav(false)}
-              scroll={false}
-              className={styles.contact}
-              href="/#contact"
+            <div
+              className={styles.hamburger}
+              onClick={() => setShowNav(!showNav)}
             >
-              <p>Contact</p>
-            </Link>
+              <AiOutlineMenu />
+            </div>
           </div>
         </div>
       </header>
 
-      {/* mobile navigation */}
+      {/* mobile nav menu */}
       {showNav && (
-        <div onClick={() => setShowNav(false)} className={styles.navMobile}>
+        <div className={styles.navMobile} onClick={() => setShowNav(false)}>
           <div className={styles.services}>
             <Link href="/#services">
               <p>Services</p>

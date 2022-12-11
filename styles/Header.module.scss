@@ -21,13 +21,14 @@
     .navbar {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      .navMenu {
+      gap: 20px;
+
+      .navigation {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 40px;
+
         .services {
           p {
             font-size: 16px;
@@ -46,39 +47,40 @@
         .about:hover {
           color: $primary;
         }
+
+        .contact {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 115px;
+          height: 42px;
+          border-radius: 4px;
+          background: transparent;
+          border: 1px solid $primary;
+          transition: 0.2s;
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            color: $primary;
+          }
+        }
+        .contact:hover {
+          box-shadow: inset 115px 0 0 0 $primary;
+          border: 1px solid $primary;
+          p {
+            color: $white;
+          }
+        }
       }
 
-      .contact {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 115px;
-        height: 42px;
-        border-radius: 4px;
-        background: transparent;
-        border: 1px solid $primary;
-        transition: 0.2s;
-        p {
-          font-size: 16px;
-          font-weight: 500;
-          color: $primary;
-        }
+      .hamburger {
+        display: none;
       }
-      .contact:hover {
-        box-shadow: inset 115px 0 0 0 $primary;
-        border: 1px solid $primary;
-        p {
-          color: $white;
-        }
-      }
-    }
-    .menu {
-      display: none;
     }
   }
 }
 
-// mobile navigation
+//# mobile nav menu
 .navMobile {
   display: none;
   p {
@@ -90,24 +92,24 @@
 @include md {
   .header {
     .container {
-      .logo {
-        margin-left: 30px;
-      }
       .navbar {
-        .navMenu {
-          display: none;
+        .navigation {
+          .services,
+          .about {
+            display: none;
+          }
+          .contact {
+            width: 100px;
+            height: 37px;
+            border-radius: 4px;
+            border: 1px solid $primary;
+          }
         }
-        .contact {
-          width: 100px;
-          height: 37px;
-          border-radius: 4px;
-          border: 1px solid $primary;
+        .hamburger {
+          display: flex;
+          cursor: pointer;
+          font-size: 25px;
         }
-      }
-      .menu {
-        display: flex;
-        cursor: pointer;
-        font-size: 25px;
       }
     }
   }
@@ -154,13 +156,14 @@
   .header {
     .container {
       padding: 10px 20px;
-
       .navbar {
-        .contact {
-          width: 80px;
-          height: 32px;
-          p {
-            font-size: 14px;
+        .navigation {
+          .contact {
+            width: 80px;
+            height: 32px;
+            p {
+              font-size: 14px;
+            }
           }
         }
       }
