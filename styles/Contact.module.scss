@@ -108,3 +108,9 @@
     }
   }
 }
+
+@include sm {
+  .contact {
+    padding-top: 0;
+  }
+}

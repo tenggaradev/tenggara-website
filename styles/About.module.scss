@@ -97,6 +97,9 @@
   .about {
     padding-top: 100px;
     .container {
+      .heading {
+        width: 80%;
+      }
       .cards {
         .card {
           width: 80%;
@@ -113,6 +116,7 @@
 
 @include sm {
   .about {
+    padding-top: 50px;
     .container {
       .cards {
         .card {
@@ -121,5 +125,10 @@
         }
       }
     }
+  }
+
+  .about::before {
+    top: -20px;
+    height: 1500px;
   }
 }
