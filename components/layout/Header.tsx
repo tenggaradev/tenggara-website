@@ -58,16 +58,12 @@ const Header = () => {
       {/* mobile nav menu */}
       {showNav && (
         <div className={styles.navMobile} onClick={() => setShowNav(false)}>
-          <div className={styles.services}>
-            <Link href="/#services">
-              <p>Services</p>
-            </Link>
-          </div>
-          <div className={styles.about}>
-            <Link href="/#about">
-              <p>About</p>
-            </Link>
-          </div>
+          <Link className={styles.services} href="/#services">
+            <p>Services</p>
+          </Link>
+          <Link className={styles.about} href="/#about">
+            <p>About</p>
+          </Link>
         </div>
       )}
     </>

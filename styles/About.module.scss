@@ -116,7 +116,9 @@
 
 @include sm {
   .about {
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
     .container {
       .cards {
         .card {
@@ -128,7 +130,7 @@
   }
 
   .about::before {
-    top: -20px;
+    top: 30px;
     height: 1500px;
   }
 }
