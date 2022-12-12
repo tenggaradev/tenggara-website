@@ -23,7 +23,7 @@ const Hero = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
               tempore rerum natus aperiam corporis blanditiis!
             </p>
-            <Link className={styles.button} href="#">
+            <Link className={styles.button} href="/#contact" scroll={false}>
               <span>Develop with Tenggara</span>
             </Link>
           </div>
