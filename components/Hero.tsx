@@ -17,12 +17,8 @@ const Hero = () => {
         <section className={styles.container}>
           <div className={styles.content}>
             <h1>
-              Securely connect smart contacts with off-chain data and services
+              Empowering businesses with the revolutionary power of blockchain technology
             </h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-              tempore rerum natus aperiam corporis blanditiis!
-            </p>
             <Link className={styles.button} href="/#contact" scroll={false}>
               <span>Develop with Tenggara</span>
             </Link>

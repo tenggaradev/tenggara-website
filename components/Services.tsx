@@ -1,10 +1,10 @@
 // media
-import { SiBlockchaindotcom } from "react-icons/si"
-import { FaFileContract, FaCoins } from "react-icons/fa"
-import { GiCube } from "react-icons/gi"
-import { IoImages } from "react-icons/io5"
+import { SiBlockchaindotcom } from "react-icons/si";
+import { FaFileContract, FaCoins } from "react-icons/fa";
+import { GiCube } from "react-icons/gi";
+import { IoImages } from "react-icons/io5";
 // style
-import styles from "../styles/Services.module.scss"
+import styles from "../styles/Services.module.scss";
 
 const Services = () => {
   return (
@@ -13,8 +13,8 @@ const Services = () => {
         <div className={styles.heading}>
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            ex.
+            Revolutionize your business with our expert blockchain application
+            development services
           </p>
         </div>
         <article className={styles.cards}>
@@ -27,8 +27,8 @@ const Services = () => {
             <div className={styles.content}>
               <h4>Blockchain Consulting</h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit impedit neque ullam ea iste quam! loprem20
+                We help businesses to take advantage of Blockchain Technology
+                and transform into Web3 optimized business.
               </p>
             </div>
           </div>
@@ -42,8 +42,8 @@ const Services = () => {
             <div className={styles.content}>
               <h4>Token</h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit impedit neque ullam ea iste quam!
+                Create your own crypto token in any chain, from white paper,
+                tokenomics, development to marketing.
               </p>
             </div>
           </div>
@@ -57,8 +57,9 @@ const Services = () => {
             <div className={styles.content}>
               <h4>NFT</h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit impedit neque ullam ea iste quam!
+                Tokenize your assets or items as NFT. Build a new business model
+                based on NFT as a unique reward or requirement for accessing
+                your special offers.
               </p>
             </div>
           </div>
@@ -72,8 +73,8 @@ const Services = () => {
             <div className={styles.content}>
               <h4>DeFi</h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit impedit neque ullam ea iste quam!
+                Create a decentralized financial system and instruments that are
+                borderless and permissionless.
               </p>
             </div>
           </div>
@@ -87,15 +88,16 @@ const Services = () => {
             <div className={styles.content}>
               <h4>Smart Contract Development</h4>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit impedit neque ullam ea iste quam!
+                Create a smart contract and smart legal contract for everything
+                may it be a business or personal, small or large, renting your
+                bike or your house. The possibilities are endless.
               </p>
             </div>
           </div>
         </article>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
