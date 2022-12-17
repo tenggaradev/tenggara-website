@@ -1,8 +1,8 @@
 // media
-import { FaUserShield } from "react-icons/fa"
-import { SiFastapi, SiBlockchaindotcom } from "react-icons/si"
+import { FaUserShield } from "react-icons/fa";
+import { SiFastapi, SiBlockchaindotcom } from "react-icons/si";
 // style
-import styles from "../styles/About.module.scss"
+import styles from "../styles/About.module.scss";
 
 const About = () => {
   return (
@@ -11,9 +11,10 @@ const About = () => {
         <div className={styles.heading}>
           <h2>About Us</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            unde similique magni quo iure aliquid expedita alias hic ducimus
-            temporibus?
+            Our team members come from different backgrounds in interest,
+            education, and expertise. Our diversity is our core strength in
+            facing real-life challenges, identifying opportunities, and finding
+            solutions.
           </p>
         </div>
         <article className={styles.cards}>
@@ -23,10 +24,11 @@ const About = () => {
                 <FaUserShield />
               </span>
             </div>
-            <h4>More Than 5+ Years of Experience</h4>
+            <h4>Years of Experience</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              nihil quae dolore nemo. Sapiente, quasi.
+              Our founding members were born out of a passion for exploring the
+              vast potential of blockchain and a desire to help others realize
+              the benefits of this revolutionary technology since 2018.
             </p>
           </div>
 
@@ -38,8 +40,10 @@ const About = () => {
             </div>
             <h4>Affordable, Fast, and Professional</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              consequuntur veniam facilis saepe nesciunt esse?
+              We offer various services, including smart contract development,
+              blockchain application development, and consulting services. So no
+              matter your needs, we can deliver it in an affordable, fast, and
+              professional.
             </p>
           </div>
 
@@ -49,16 +53,16 @@ const About = () => {
                 <SiBlockchaindotcom />
               </span>
             </div>
-            <h4>20+ EVM and Non-EVM Chains Development</h4>
+            <h4>40+ EVM and Non-EVM Chains Development</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, a ea
-              sequi neque corporis perspiciatis?
+              From Ethereum to Hyperledger Fabric, we have the knowledge and
+              experience to work with a variety of platforms and technologies.
             </p>
           </div>
         </article>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
