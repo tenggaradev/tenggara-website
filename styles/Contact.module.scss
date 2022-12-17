@@ -96,7 +96,7 @@
 //___ BREAKPOINTS ___
 @include md {
   .contact {
-    padding-top: 30px;
+    padding-top: 100px;
     margin-bottom: 50px;
     .container {
       .heading {
@@ -109,8 +109,8 @@
   }
 }
 
-@include sm {
-  .contact {
-    padding-top: 0;
-  }
-}
+// @include sm {
+//   .contact {
+//     padding-top: 0;
+//   }
+// }
