@@ -38,9 +38,6 @@ const Contact = () => {
         <div className={styles.heading}>
           <h2>Contact Us</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            placeat suscipit earum autem ea nisi accusantium recusandae
-            excepturi similique soluta.
           </p>
         </div>
         <form className={styles.message} ref={form} onSubmit={sendEmail}>
