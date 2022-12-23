@@ -1,11 +1,12 @@
 @import "variables";
 @import "breakpoints";
+@import "container";
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
+  min-height: 70px;
   background-color: $primary;
 
   .container {
@@ -13,13 +14,11 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    width: 1440px;
-    padding-right: 20px;
-    padding-left: 20px;
+    @include global-container();
 
     span {
       color: #ccc;
+      font-size: 13px;
     }
 
     .term {
@@ -28,6 +27,7 @@
       gap: 20px;
       p {
         color: $white;
+        font-size: 14px;
       }
     }
   }
@@ -37,9 +37,18 @@
 @include md {
   .footer {
     .container {
-      flex-direction: column;
+      flex-direction: row;
       padding-top: 30px;
       padding-bottom: 30px;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        font-size: 11px;
+      }
+      .term {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }

@@ -1,13 +1,14 @@
 @import "variables";
 @import "breakpoints";
+@import "container";
 
 .hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 85vh;
+  padding-top: 170px;
+  padding-bottom: 170px;
   width: 100%;
-  padding-top: 100px;
   background: linear-gradient(
     125deg,
     #dfe7fb 0%,
@@ -17,24 +18,21 @@
   );
 
   .container {
+    @include global-container();
     display: flex;
-    width: 100%;
+    // width: 100%;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
 
     .content {
-      width: 744px;
-      height: 300px;
-      padding-left: 50px;
+      width: 55%;
       h1 {
         font-size: 42px;
         font-weight: 700;
-        width: 744px;
       }
       .button {
         display: flex;
         align-items: center;
-        width: 260px;
         span {
           color: $white;
           font-weight: 600;
@@ -53,8 +51,11 @@
       }
     }
     .image {
-      overflow: hidden;
-      margin-left: 100px;
+      width: 45%;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -65,18 +66,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 12vh;
+  padding: 15px 0;
   background: #fcfcfc;
   border: 2px solid $accent;
   .container {
-    width: 70%;
+    @include global-container();
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     div {
-      width: 150px;
+      width: auto;
       height: 75px;
+      img{
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
@@ -92,13 +97,33 @@
 
 @include lg {
   .hero {
+    padding-top: calc(80px + 80px);
+    padding-bottom: 80px;
     .container {
+      justify-content: center;
+      flex-direction: column-reverse;
       .content {
+        width: 100%;
         h1 {
-          width: 600px;
+          text-align: center;
+          width: 100%;
+          font-size: 30px;
         }
         p {
-          width: 430px;
+          text-align: center;
+          width: 100%;
+        }
+        .button {
+          justify-content: center;
+        }
+      }
+      .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+          height: 300px;
+          width: auto;
         }
       }
     }
@@ -107,7 +132,7 @@
   .stacks {
     .container {
       div {
-        width: 100px;
+        width: auto;
         height: 50px;
       }
     }
@@ -127,7 +152,6 @@
         }
       }
       .image {
-        display: none;
       }
     }
   }
@@ -144,15 +168,33 @@
 
 @include sm {
   .hero {
-    padding-top: 0;
+    padding-top: calc(80px + 80px);
+    padding-bottom: 80px;
     .container {
+      justify-content: center;
+      flex-direction: column-reverse;
       .content {
+        width: 100%;
         h1 {
-          width: 90%;
-          font-size: 30px;
+          text-align: center;
+          width: 100%;
+          font-size: 26px;
         }
         p {
-          width: 90%;
+          text-align: center;
+          width: 100%;
+        }
+        .button {
+          justify-content: center;
+        }
+      }
+      .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+          height: 200px;
+          width: auto;
         }
       }
     }
@@ -160,9 +202,13 @@
 
   .stacks {
     .container {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
       div {
-        width: 60px;
-        height: 30px;
+        padding: 10px;
+        width: 33%;
+        height: auto;
       }
     }
   }

@@ -24,7 +24,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className={styles.image}>
-            <Image src={HeroImage} alt="hero" width={728} height={502} />
+            <Image src={HeroImage} alt="hero" />
           </div>
         </section>
       </main>
@@ -36,35 +36,30 @@ const Hero = () => {
             <Image
               src={Ethereum}
               alt="ethereum"
-              style={{ width: "100%", height: "100%" }}
             />
           </div>
           <div>
             <Image
               src={Fantom}
               alt="fantom"
-              style={{ width: "100%", height: "100%" }}
             />
           </div>
           <div>
             <Image
               src={Avalanche}
               alt="avalanche"
-              style={{ width: "100%", height: "100%" }}
             />
           </div>
           <div>
             <Image
               src={Polygon}
               alt="polygon"
-              style={{ width: "100%", height: "100%" }}
             />
           </div>
           <div>
             <Image
               src={Binance}
               alt="binance"
-              style={{ width: "100%", height: "100%" }}
             />
           </div>
         </div>

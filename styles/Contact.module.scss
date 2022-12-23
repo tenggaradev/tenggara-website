@@ -1,5 +1,6 @@
 @import "variables";
 @import "breakpoints";
+@import "container";
 
 .contact {
   display: flex;
@@ -8,7 +9,6 @@
   min-height: 600px;
   padding-top: 150px;
   padding-bottom: 100px;
-  margin-bottom: 100px;
   position: relative;
 
   .container {
@@ -16,19 +16,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    @include global-container();
+    width: 100%;
 
     .heading {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 60%;
-      margin-bottom: 30px;
+      width: 100%;
       h2 {
         font-size: 40px;
         font-weight: 600;
-        line-height: 0;
       }
       p {
         text-align: center;
@@ -94,6 +93,13 @@
 }
 
 //___ BREAKPOINTS ___
+@include lg {
+  .contact {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
 @include md {
   .contact {
     padding-top: 100px;
@@ -109,8 +115,14 @@
   }
 }
 
-// @include sm {
-//   .contact {
-//     padding-top: 0;
-//   }
-// }
+@include sm {
+  .contact {
+    padding-top: 200px;
+    margin-bottom: 0;
+    .heading {
+      h2{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

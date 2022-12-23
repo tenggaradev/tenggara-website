@@ -1,5 +1,6 @@
 @import "variables";
 @import "breakpoints";
+@import "container";
 
 .header {
   display: flex;
@@ -8,7 +9,7 @@
   position: fixed;
   z-index: 9;
   width: 100%;
-  height: 85px;
+  height: 80px;
   background: $white;
   box-shadow: 0 0 5px 5px rgba($color: #000000, $alpha: 0.05);
 
@@ -16,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1440px;
-    padding: 10px 50px;
+    @include global-container();
+    width: 100%;
     .navbar {
       display: flex;
       align-items: center;
@@ -146,7 +147,7 @@
     }
     .about:hover,
     .about:active,
-    .about:focus {
+    .about:focus { 
       color: $primary;
     }
   }
@@ -155,7 +156,6 @@
 @include sm {
   .header {
     .container {
-      padding: 10px 20px;
       .navbar {
         .navigation {
           .contact {

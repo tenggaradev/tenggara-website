@@ -1,5 +1,6 @@
 @import "variables";
 @import "breakpoints";
+@import "container";
 
 .services {
   display: flex;
@@ -10,11 +11,11 @@
   padding-bottom: 100px;
 
   .container {
+    @include global-container();
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1440px;
 
     .heading {
       display: flex;
@@ -35,20 +36,20 @@
 
     .cards {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
-      padding: 20px;
+      gap: 20px;
+      padding: 20px 0;
 
       .card {
+        align-self: stretch;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 30px;
-        width: 397px;
+        width: 32%;
         min-height: 186px;
-        height: 260px;
         box-shadow: 0 5px 15px 5px rgba($color: #000000, $alpha: 0.05);
         border-radius: 6px;
         padding: 30px;
@@ -66,6 +67,9 @@
         .content {
           display: flex;
           flex-direction: column;
+          h4{
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -73,12 +77,12 @@
 }
 
 //___ BREAKPOINTS ___
-@include md {
+@include lg {
   .services {
     .container {
       .cards {
         .card {
-          width: 80%;
+          width: 47%;
         }
       }
     }
@@ -95,15 +99,19 @@
           height: 100%;
           width: 100%;
           flex-direction: column;
+          gap: 0;
           .icon {
             align-self: center;
           }
           .content {
             justify-content: center;
             align-items: center;
+            width: 100%;
             h4 {
               text-align: center;
-              line-height: 0;
+            }
+            p{
+              text-align: center;
             }
           }
         }
